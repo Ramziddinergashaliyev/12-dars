@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+@media (min-width:1440px) {
+  .container {
+    width: 1200px;
+  }
+}
+.nav__top {
+  background: #000;
+}
+.nav__top__left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0px;
+}
+.nav__top__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0px;
+}
+.nav__home {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__top__text {
+  color:#969696;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav__about__right {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.top__left__icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.nav__bottom {
+  background: #0F0F0F;
+}
+.nav__about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__about__left__btn {
+  color: #FFF;
+  font-family: "Post No Bills Jaffna";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  background-color: #0F0F0F;
+}
+
+.nav__about__btn {
+  color: #969696;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: #0F0F0F;
+  padding: 31px 20px;
+}
+.nav__about__left__btn:hover {
+  background-color: #1F1F1F;
+}
+.nav__about__btn:hover {
+  background-color: #1F1F1F;
+  color: #FFF;
+}
+.nav__about__icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  background-color:#0F0F0F;
+  margin-left: 40px;
+}
+
+@media (max-width: 920px) {
+  .nav__about__btn {
+    display: none;
+  }
+}
+
+.section__hero {
+  background: url('../images/hero__foto.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 810px;
+}
+
+.section__hero {
+  color: #FFF;
+  text-align: center;
+  font-family: "Post No Bills Jaffna";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 250px;
+}
+
+.section__hero__card__text {
+  color: #FFF;
+  text-align: center;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+.section__hero__text {
+  color: #FFF;
+  text-align: center;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  max-width: 730px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.section__watch__left {
+ display: flex;
+ gap: 20px;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.watch__collection {
+  display: flex;
+  width: 100%;
+}
+
+.section__left__watch {
+  background-color: #1F1F1F;
+}
+
+.section__watch {
+  width: 50%;
+  background-color: #000;
+}
+
+.section__watch__text {
+  color:#FFF;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section__watch__left__text {
+  color:#FFF;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding:80px 0px;
+}
+.section__hero__card {
+  border: 4px solid white;
+  display: flex;
+  max-width: 420px;
+  /* max-height: 520px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.section__watch__right {
+  background: url('../images/people\ watch.png');
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.section__watch__right__text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 484px;
+  padding-bottom: 30px;
+}
+
+.section__watch__right__katolog {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  width: 140px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+.nav__hamburger {
+  display: none;
+  cursor: pointer;
+  color: #FFF;
+}
+
+@media (max-width:500px) {
+  .watch__collection {
+    flex-direction: column;
+    background-color: #000;
+  }
+  .section__left__watch {
+    width: 100%;
+  }
+  .watch__carded {
+    display: none;
+  }
+  .section__watch__right {
+    width: 100%;
+  }
+  .section__hero__portner {
+    font-size: 40px;
+  }
+  .section__watch,
+  .section__watches__card {
+    margin: 0 auto;
+  }
+  .section__watches__top__text {
+    font-size: 20px;
+  }
+  .section__watches__top__text {
+    display: none;
+  }
+  .main__section__img {
+    display: none;
+  }
+  .main__section__right {
+    display: none;
+  }
+  .footer__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:730px) {
+  .watch__carded {
+    display: none;
+  }
+  .section__watches__card {
+    margin: 0 auto;
+    width: 400px;
+  }
+  .nav__bottom {
+    text-align: center;
+  }
+  .nav__hamburger {
+    display: block;
+    color: #FFF;
+    align-items: center;
+    padding: 5px 10px 5px;
+  }
+}
+@media (max-width:850px) {
+  .watch__carded {
+    display: none;
+  }
+  .main__section__img {
+    object-fit: cover;
+  }
+
+}
+@media (min-width:1440px) {
+  main{
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.main__section {
+  display: flex;
+  width: 100%;
+}
+.main__section__img {
+  max-width: 50%;
+  background-color: aqua;
+}
+.main__section__right {
+  width: 50%;
+  background-color: #000;
+}
+.main__section__right__text {
+  color:  #FFF;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+.main__section__right__lorem {
+  color:  #FFF;
+  text-align: center;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 80px;
+}
+
+.main__section__poragrof {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  border: 1px solid gray;
+  padding: 12px 24px;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.section__watches {
+  background-color: #000;
+}
+
+.section__watches__top__text {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 120px;
+}
+.section__watches__card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.section__watches__img {
+  background-color: #1F1F1F;
+  width: 245px;
+  padding: 55px 32px;
+}
+.section__watches__text {
+  color: #FFF;
+  padding-top: 15px;
+}
+
+footer {
+  background: #0F0F0F;
+}
+
+.footer__text {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 60px 0px;
+}
+
+.footer__img {
+  gap: 30px;
+  justify-content: space-between;
+}
